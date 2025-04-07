@@ -3,8 +3,8 @@
 .Model Small 
 .Stack 100 
 .Data 
-		CRLF    DB	13, 10, '$'	
-		ChaoTay	DB 	'hello!$'
+			
+		ChaoTay	DB 	'Hello PTIT OJ.$'
 		ChaoTa	DB 	'chao ban!$'
 .Code
 MAIN Proc
@@ -14,15 +14,12 @@ MAIN Proc
                              
 		
 		MOV AH, 9
-                                    
-		LEA DX, ChaoTay 
-		INT 21H  
+                                 
         
-		LEA DX, CRLF
-		INT 21H                              
+		                             
 		
 		
-		LEA DX, ChaoTa
+		LEA DX, ChaoTay
 		INT 21H      
 		
 		
